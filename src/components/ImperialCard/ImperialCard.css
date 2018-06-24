@@ -17,10 +17,6 @@
 }
 
 .card > .img-container > img {
-  width: 60%
-}
-
-img {
   margin-top: 5%;
-  width: 83%;
+  width: 83%
 }

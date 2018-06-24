@@ -9,15 +9,43 @@ import "./App.css";
 class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
-    troopers
+    troopers: troopers,
+    clicked: [],
+    score: 0,
+    hiScore: 0,
+    message: ""
+    
   };
 
-  removeFriend = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const troopers = this.state.troopers.filter(trooper => trooper.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ troopers });
-  };
+  handleReset = () => {
+    this.setState(
+      {
+        clicked: []
+      }
+    )
+  }
+
+  handleShuffleArray = (arr) => {
+    for (let i = arr.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  handleClick = (id) => {
+    // alert(id);
+    if(this.state.clicked.indexOf(id) === -1) {
+      this.setState(
+        {
+          clicked: this.state.clicked.concat(id)
+        }
+      );
+    } else {
+      this.handleReset();
+    }
+    this.handleShuffleArray(troopers);
+  }
 
   // Map over this.state.friends and render a component for each friend object
   render() {
@@ -27,13 +55,11 @@ class App extends Component {
         <Title>Trooper List</Title>
         {this.state.troopers.map(trooper => (
           <ImperialCard
-            removeFriend={this.removeFriend}
+            handleClick={this.handleClick}
             id={trooper.id}
             key={trooper.id}
             name={trooper.name}
             image={trooper.image}
-            occupation={trooper.occupation}
-            location={trooper.location}
           />
         ))}
       </Wrapper>

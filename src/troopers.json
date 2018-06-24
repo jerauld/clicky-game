@@ -9,7 +9,6 @@
     "id": 2,
     "name": "Imperial Stormtrooper",
     "image": "./images/imperial-helmets/Imperial-Stormtrooper.png",
-    "occupation": "Restaurant Owner",
     "clicked": false
   },
   {
