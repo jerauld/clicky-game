@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ImperialCard from "./components/ImperialCard";
 import Wrapper from "./components/Wrapper";
+import Nav from "./components/Nav";
 import Title from "./components/Title";
 import troopers from "./troopers.json";
 import "./App.css";
@@ -22,6 +23,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
+        <Nav />
         <Title>Trooper List</Title>
         {this.state.troopers.map(trooper => (
           <ImperialCard
