@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "name": "Ralph McQuarrie Trooper",
+    "image": "./images/imperial-helmets/Ralph-McQuarrie-Trooper.png",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "name": "Imperial Stormtrooper",
+    "image": "./images/imperial-helmets/Imperial-Stormtrooper.png",
+    "occupation": "Restaurant Owner",
+    "clicked": false
+  },
+  {
+    "id": 3,
+    "name": "Imperial TIE Pilot",
+    "image": "./images/imperial-helmets/Imperial-TIE-Pilot.png",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "name": "Imperial Snowtrooper",
+    "image": "./images/imperial-helmets/Imperial-Snowtrooper.png",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "name": "Imperial Army Pilot",
+    "image": "./images/imperial-helmets/Imperial-Army-Pilot.png",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "name": "Scout Trooper",
+    "image": "./images/imperial-helmets/Scout-Trooper.png",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "name": "Clone Trooper Phase 1",
+    "image": "./images/imperial-helmets/Clone-Trooper-Phase-1.png",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "name": "Clone Trooper Phase 2",
+    "image": "./images/imperial-helmets/Clone-Trooper-Phase-2.png",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "name": "FStar Wars Rebels Stormtrooper",
+    "image": "./images/imperial-helmets/Star-Wars-Rebels-Stormtrooper.png",
+    "clicked": false
+  },
+  {
+    "id": 10,
+    "name": "First Order Stormtrooper",
+    "image": "./images/imperial-helmets/First-Order-Stormtrooper.png",
+    "clicked": false
+  },
+  {
+    "id": 11,
+    "name": "First Order Snowtrooper",
+    "image": "./images/imperial-helmets/First-Order-Snowtrooper.png",
+    "clicked": false
+  },
+  {
+    "id": 12,
+    "name": "First Order Flametrooper",
+    "image": "./images/imperial-helmets/First-Order-Flametrooper.png",
+    "clicked": false
+  }
+]
