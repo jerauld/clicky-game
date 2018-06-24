@@ -13,17 +13,9 @@ class App extends Component {
     clicked: [],
     score: 0,
     hiScore: 0,
-    message: ""
+    message: "Click an image to begin!"
     
   };
-
-  handleReset = () => {
-    this.setState(
-      {
-        clicked: []
-      }
-    )
-  }
 
   handleShuffleArray = (arr) => {
     for (let i = arr.length - 1; i > 0; i--) {
@@ -37,12 +29,24 @@ class App extends Component {
     // alert(id);
     if(this.state.clicked.indexOf(id) === -1) {
       this.setState(
-        {
-          clicked: this.state.clicked.concat(id)
+        { 
+          troopers: troopers,
+          clicked: this.state.clicked.concat(id),
+          score: this.state.score + 1,
+          hiScore: (this.state.hiScore > this.state.score) ? this.state.hiScore : this.state.hiScore + 1,
+          message: "You guessed correctly!"
         }
       );
     } else {
-      this.handleReset();
+      this.setState(
+        {
+          troopers: troopers,
+          clicked: [],
+          score: 0,
+          topScore: (this.state.score > this.state.hiScore) ? this.state.score : this.state.hiScore,
+          message: "You guessed incorrectly!"
+        }
+      );
     }
     this.handleShuffleArray(troopers);
   }
@@ -51,7 +55,12 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Nav />
+        <Nav
+          brand="Clicky Game"
+          message={this.state.message}
+          score={this.state.score}
+          hiScore={this.state.hiScore}
+          />
         <Title>Trooper List</Title>
         {this.state.troopers.map(trooper => (
           <ImperialCard

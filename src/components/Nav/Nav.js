@@ -6,13 +6,13 @@ const Nav = props => (
     <nav className="navbar">
         <ul>
             <li className="brand">
-                Clicky Game
+                {props.brand}
             </li>
             <li>
-                Click and image to begin!
+                {props.message} 
             </li>
             <li>
-                Scores go here.
+                Score: {props.score} | Top Score: {props.hiScore}
             </li>
         </ul>
     </nav>
