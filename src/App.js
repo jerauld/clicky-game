@@ -61,7 +61,7 @@ class App extends Component {
           score={this.state.score}
           hiScore={this.state.hiScore}
           />
-        <Title>Trooper List</Title>
+        <Title subtitle="Imperial Helmet Edition">Clicky Game</Title>
         {this.state.troopers.map(trooper => (
           <ImperialCard
             handleClick={this.handleClick}

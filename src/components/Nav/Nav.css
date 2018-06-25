@@ -29,3 +29,11 @@
   color: #fff;
   font-weight: 900
 }
+
+.score {
+  margin: 0 2.5%;
+}
+
+.scoreSplit {
+  color: #a43029;
+}

@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Ropa Sans', sans-serif;
+  text-transform: uppercase;
 }
 
 html, body, #root {

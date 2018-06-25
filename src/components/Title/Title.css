@@ -1,15 +1,24 @@
 .title {
-  background-color: #282727;
-  background-repeat: repeat;
+  background: #030303 url("/images/Captain-Phasma.png") no-repeat center top;
+  background-size: 100% auto;
   color: #fff;
   min-height: 400px;
   padding: 180px 20px;
   padding-bottom: 140px;
-  text-align: center
+  text-align: center;
+  border-bottom: 1px solid #fff;
 }
 
 .title h1 {
   margin: 0;
   margin-bottom: 30px;
-  font-size: 4rem
+  font-size: 4rem;
+  -webkit-text-stroke: 1px #282727;
+}
+
+.title p {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 3rem;
+  -webkit-text-stroke: 1px #282727;
 }

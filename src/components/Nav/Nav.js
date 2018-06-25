@@ -12,7 +12,7 @@ const Nav = props => (
                 {props.message} 
             </li>
             <li>
-                Score: {props.score} | Top Score: {props.hiScore}
+                <span className="score"> Score: {props.score}</span> <span className="scoreSplit">|</span> <span className="score">Top Score: {props.hiScore}</span>
             </li>
         </ul>
     </nav>

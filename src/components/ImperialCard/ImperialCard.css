@@ -26,8 +26,9 @@
   height: 100%;
   overflow: hidden;
   text-align: center;
-  background:#282727;
-  border: #a43029 1px solid
+  background: linear-gradient(#151515, #282727);
+  /* background:#282727; */
+  border: #a43029 1px solid;
 }
 
 .card > .img-container > img {
