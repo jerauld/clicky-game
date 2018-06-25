@@ -8,7 +8,7 @@ const Nav = props => (
             <li className="brand">
                 {props.brand}
             </li>
-            <li>
+            <li className={props.message}>
                 {props.message} 
             </li>
             <li>

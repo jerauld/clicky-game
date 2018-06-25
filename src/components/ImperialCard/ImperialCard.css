@@ -5,7 +5,20 @@
   margin: 1rem;
   position: relative;
   width: 175px;
-  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  /* box-shadow: 0 3px 6px #999, 0 3px 6px #999; */
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
+  box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
+}
+
+.card:hover{
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-box-shadow: 0 14px 28px rgba(164,48,41,.25),0 10px 10px rgba(164,48,41,.22);
+  box-shadow: 0 14px 28px rgba(164,48,41,.25),0 10px 10px rgba(164,48,41,.22);
+  -webkit-transition: .1s;
+  -o-transition: .1s;
+  transition: .1s
 }
 
 .card > .img-container {
@@ -13,7 +26,8 @@
   height: 100%;
   overflow: hidden;
   text-align: center;
-  background:#6CADDC;
+  background:#282727;
+  border: #a43029 1px solid
 }
 
 .card > .img-container > img {
