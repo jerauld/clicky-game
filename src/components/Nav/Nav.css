@@ -39,11 +39,13 @@
 }
 
 .navbar .correct {
+    color: #2e7d32;
   -webkit-animation: 1s correct;
   animation: 1s correct
 }
 
 .navbar .incorrect {
+    color: #c62828;
   -webkit-animation: 1s incorrect;
   animation: 1s incorrect
 }

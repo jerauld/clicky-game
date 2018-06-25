@@ -26,9 +26,9 @@ class App extends Component {
 
   handleClick = (id) => {
     // alert(id);
-    if(this.state.clicked.indexOf(id) === -1) {
+    if (this.state.clicked.indexOf(id) === -1) {
       this.setState(
-        { 
+        {
           troopers: troopers,
           clicked: this.state.clicked.concat(id),
           score: this.state.score + 1,
@@ -59,7 +59,7 @@ class App extends Component {
           message={this.state.message}
           score={this.state.score}
           hiScore={this.state.hiScore}
-          />
+        />
         <Title subtitle="Imperial Helmet Edition">Clicky Game</Title>
         {this.state.troopers.map(trooper => (
           <ImperialCard

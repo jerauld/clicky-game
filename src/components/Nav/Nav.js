@@ -11,21 +11,21 @@ const Nav = props => {
         }
     }
 
-        return (
+    return (
         <nav className="navbar">
             <ul>
                 <li className="brand">
                     {props.brand}
                 </li>
-                <li className={messageClass()}>
-                    {props.message} 
+                <li id="message" className={messageClass()}>
+                    {props.message}
                 </li>
                 <li>
                     <span className="score"> Score: {props.score}</span> <span className="scoreSplit">|</span> <span className="score">Top Score: {props.hiScore}</span>
                 </li>
             </ul>
         </nav>
-        )  
+    )
 
 }
 
