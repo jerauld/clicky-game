@@ -68,6 +68,7 @@ class App extends Component {
             id={trooper.id}
             key={trooper.id}
             name={trooper.name}
+            message={this.state.message}
             image={trooper.image}
             score={this.state.score}
           />
