@@ -69,6 +69,7 @@ class App extends Component {
             key={trooper.id}
             name={trooper.name}
             image={trooper.image}
+            score={this.state.score}
           />
         ))}
       </Wrapper>

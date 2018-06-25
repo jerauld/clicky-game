@@ -7,7 +7,7 @@ const ImperialCard = props => (
     onClick={() => props.handleClick(props.id)}
   >
     <div className="img-container">
-        <img alt={props.name} src={props.image} />
+        <img className={props.score === 0 ? "shake" : ""} alt={props.name} src={props.image} />
     </div>
   </div>
 );
