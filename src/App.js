@@ -14,7 +14,6 @@ class App extends Component {
     score: 0,
     hiScore: 0,
     message: "Click an image to begin!"
-    
   };
 
   handleShuffleArray = (arr) => {
