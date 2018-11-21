@@ -14,7 +14,9 @@ This app was created using `create-react-app <app-name>` command which requires 
 
 `yarn start` in the root folder to run locally via `localhost: 3000`
 
-## Demo (via Heroku)
+## Demo (via GitHub Pages)
+
+https://julienshim.github.io/clicky-game/
 
 ### GIF
 
