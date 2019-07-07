@@ -5,7 +5,7 @@
   "homepage": "https://julienshim.github.io/clicky-game",
   "dependencies": {
     "braces": "^3.0.2",
-    "eslint": "^5.0.0",
+    "eslint": "^6.0.1",
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
