@@ -4,12 +4,13 @@
   "private": true,
   "homepage": "https://julienshim.github.io/clicky-game",
   "dependencies": {
+    "braces": "^3.0.2",
+    "eslint": "^5.0.0",
     "gh-pages": "^2.0.1",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-scripts": "^3.0.1",
-    "braces": ">=2.3.1",
-    "eslint": ">=4.18.2"
+    "typescript": "^3.5.2"
   },
   "scripts": {
     "predeploy": "npm run build",
