@@ -4,10 +4,27 @@ import "./Nav.css";
 const Nav = props => {
 
     const messageClass = () => {
+        const messageEl = document.getElementById('message');
         if (props.message === "You guessed correctly!") {
-            return "correct";
+            if(messageEl.classList.contains('correct')) {
+              messageEl.classList.remove('correct');
+            }
+            if(messageEl.classList.contains('incorrect')) {
+              messageEl.classList.remove('incorrect');
+            }
+            setTimeout(function(){
+              messageEl.classList.add('correct')
+            }, 50);
         } else if (props.message === "You guessed incorrectly!") {
-            return "incorrect";
+          if(messageEl.classList.contains('correct')) {
+            messageEl.classList.remove('correct');
+          }
+          if(messageEl.classList.contains('incorrect')) {
+            messageEl.classList.remove('incorrect');
+          }
+          setTimeout(function(){
+            messageEl.classList.add('incorrect')
+          }, 50);
         }
     }
 
