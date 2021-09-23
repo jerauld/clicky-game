@@ -5,10 +5,10 @@
   "homepage": "https://julienshim.github.io/clicky-game",
   "dependencies": {
     "gh-pages": "^3.1.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-script": "^2.0.5",
-    "react-scripts": "^3.4.0",
+    "react-scripts": "^4.0.3",
     "typescript": "^4.0.2"
   },
   "scripts": {
